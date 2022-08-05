@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>form-v1 by Colorlib</title>
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="header.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: rgb(245, 245, 245);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        div.signup-form-main-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: calc(100% - 40px);
+            max-height: calc(100vh - 40px);
+            margin-top: 10px;
+            background-color: rgb(245, 245, 245);
+        }
+        
+        div.wizard-header h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: black;
+            text-align: left;
+            margin: 10px 0 5px 0;
+        }
+        
+        div.wizard-header p {
+            text-align: left;
+            color: rgb(78, 78, 78);
+            font-size: 14px;
+        }
+        
+        hr {
+            margin: 15px 0;
+            border: 0;
+            height: 0;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        div.signup-form-main-wrapper .img-container {
+            background-color: transparent !important;
+            width: 30%;
+            min-width: 400px;
+        }
+        
+        div.signup-form-main-wrapper .signup-form-container {
+            width: 30%;
+            min-width: 300px;
+            height: max-content !important;
+            background-color: transparent !important;
+        }
+        
+        div.signup-form-main-wrapper .signup-form-container .signup-form,
+        div.signup-form-main-wrapper .signup-page-login-div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 10px 25px;
+            border: 1px solid #dddd;
+            background-color: white;
+        }
+        
+        div.signup-form-main-wrapper .signup-page-login-div {
+            margin-top: 10px;
+            padding: 15px 25px;
+        }
+        
+        div.signup-form-main-wrapper .signup-page-login-div p {
+            margin-bottom: 0px !important;
+        }
+        
+        div.signup-form-main-wrapper .signup-page-login-div p a {
+            color: rgb(60, 95, 211);
+        }
+        
+        div.wizard-header {
+            margin-bottom: 25px;
+        }
+        
+        fieldset {
+            width: 100%;
+            height: 37px;
+            border: 1px solid #dddd;
+            border-radius: 2px;
+            position: relative;
+            padding: 0;
+            margin-bottom: 12px;
+        }
+        
+        div.signup-form-main-wrapper input,
+        div.signup-form-main-wrapper select {
+            width: 100%;
+            height: 100%;
+            border: none !important;
+            outline: none;
+            text-indent: 0px;
+            color: rgb(41, 41, 41);
+            font-weight: bold;
+            background-color: rgb(248, 248, 248) !important;
+        }
+        
+        div.signup-form-main-wrapper select {
+            text-indent: 8px !important;
+        }
+        
+        div.signup-form-main-wrapper input::placeholder {
+            font-weight: 400;
+            font-size: 14px !important;
+        }
+        
+        div.signup-form-main-wrapper select {
+            font-weight: 500;
+        }
+        
+        div.form-row-date fieldset {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            height: max-content;
+        }
+        
+        div.form-row-date fieldset select {
+            height: 40px;
+            margin: 10px;
+            border: 1px solid #dddd !important;
+        }
+        
+        div.signup-form-main-wrapper .img-container,
+        div.signup-form-main-wrapper .signup-form-container {
+            height: 70%;
+            margin: 20px;
+            position: relative;
+            background-color: white;
+        }
+        
+        div.signup-form-main-wrapper .img-container img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        button.submit-btn {
+            color: white !important;
+            background-color: rgb(60, 95, 211) !important;
+            border: none;
+            outline: none;
+            border-radius: 2px;
+            width: 100%;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        
+        @media only screen and (max-width: 900px) {
+            div.signup-form-main-wrapper .signup-form-container {
+                width: 90%;
+                min-width: 300px;
+            }
+            div.signup-form-main-wrapper .img-container {
+                display: none;
+            }
+        }
+        
+        footer .bottom-main {
+            width: 100%;
+            line-height: 40px;
+            margin: 57.5px 0 10px 0;
+            bottom: 0;
+            color: rgb(49, 49, 49);
+            font-size: 14px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="header">
+        <div class="logo">Traverse</div>
+        <div class="center">
+            <ul>
+                <li class="header-items">Home</li>
+                <li class="header-items">Trips</li>
+                <li class="header-items">Guide</li>
+                <li class="header-items">Contact</li>
+            </ul>
+        </div>
+        <div class="profile">Bibek Shah</div>
+    </div>
+
+    <div class="signup-form-main-wrapper">
+        <div class="img-container">
+            <img src="signup-art.svg" alt="signup art">
+        </div>
+        <div class="signup-form-container">
+            <div class="signup-form">
+                <form class="form-register" action="#" method="post">
+                    <div id="form-total">
+                        </h2>
+                        <section>
+                            <div class="inner">
+                                <div class="wizard-header">
+                                    <h3>Peronal Infomation</h3>
+                                    <p>Please enter your infomation and proceed to the next step so we can build your accounts. </p>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <input type="text" name="your_username" id="your_username" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="Your username" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <!-- <div class="form-row">
+                                    <div class="form-holder" style="display: flex; flex-direction: row; justify-content: space-between;">
+                                        <fieldset style="width: 48%;">
+                                            <input type="text" class="form-control" id="first-name" name="first-name" placeholder="First Name" required>
+                                        </fieldset>
+                                        <fieldset style="width: 48%;">
+                                            <input type="text" class="form-control" id="last-name" name="last-name" placeholder="Last Name" required>
+                                        </fieldset>
+                                    </div>
+                                </div> -->
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <input type="text" name="your_name" id="your_name" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="John Doe" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <input type="text" name="your_email" id="your_email" class="form-control" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" placeholder="example@email.com" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <input type="text" class="form-control" id="phone" name="phone" placeholder="+1 888-999-7777" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder" style="display: flex; flex-direction: row; justify-content: space-between;">
+                                        <fieldset style="width: 48%;">
+                                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" required>
+                                        </fieldset>
+                                        <fieldset style="width: 48%;">
+                                            <input type="password" class="form-control" id="confirm-password" name="password" placeholder="Re-enter your password" required>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <select name="gender" id="gender">
+                                                <option value="Male" selected>Male</option>
+                                                <option value="Female">Female</option>
+                                                <option value="Non-binary">Non-binary</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-holder form-holder-2">
+                                        <fieldset>
+                                            <select name="role" id="role">
+                                                <option value="Male" selected>User</option>
+                                                <option value="Female">Guide</option>
+                                            </select>
+                                        </fieldset>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <button type="submit" class="submit-btn"><i class="bi bi-facebook"></i>   Login with Facebook</button>
+                                </div>
+
+                                <div class="form-row">
+                                    <button type="submit" class="submit-btn">Signup</button>
+                                </div>
+
+                                <div class="form-row">
+                                    <p style="font-size: 12px; color: #1c1c1c; text-align: center; margin: 15px 0 10px 0 !important;">By signing up, you agree to our Terms , Data Policy and Cookies Policy.</p>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </form>
+
+            </div>
+            <div class="signup-page-login-div">
+                <p>Have an account? <a href="login.html">Login</a></p>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="bottom-main">Copyright &copy; Traverse.com.np</div>
+    </footer>
+</body>
+
+</html>

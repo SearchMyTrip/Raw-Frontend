@@ -1,0 +1,60 @@
+.header {
+    width: 100%;
+    height: 70px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 10px #dddd;
+    background-color: white;
+}
+
+.header .logo {
+    float: left;
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.header .center {
+    display: flex;
+    flex-direction: row;
+}
+
+.header .center ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.header .center ul li {
+    position: relative;
+    margin: 0 10px;
+    font-size: 14px;
+    cursor: pointer;
+    /* border-bottom: 1px solid transparent; */
+}
+
+.header .center ul li::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: black;
+    transition: ease-in-out 0.4s;
+}
+
+.header .center ul li:hover::before {
+    width: 100%;
+    background-color: black !important;
+}
+
+.header .center ul li:hover {
+    color: blueviolet;
+}
+
+.header .profile {
+    margin-right: 15px;
+}
