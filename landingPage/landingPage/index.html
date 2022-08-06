@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traverse</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="header shadow">
+            <div class="logo">Traverse</div>
+            <div class="center">
+                <ul>
+                    <li class="header-items">Home</li>
+                    <li class="header-items">Trips</li>
+                    <li class="header-items">Guide</li>
+                    <li class="header-items">Contact</li>
+                </ul>
+            </div>
+
+            <div class="profile">
+                <!-- Example single danger button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown"><i class="bi bi-list"></i><i class="bi bi-person-circle"></i></button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Community</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item text-danger" href="#"><b>Logout</b></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="body-container">
+
+            <div class="main-body">
+
+                <div class="content">
+
+                    <div class="searchBar-container">
+                        <div class="searchBar-wrapper">
+                            <input type="text" placeholder="Enter places to visit." class="searchBar" id="location-search">
+                            <div class="search-icon"><i class="bi bi-search"></i></div>
+                        </div>
+                        <div class="search-buttons">
+                            <ul>
+                                <li class="search-items">Cultural</li>
+                                <li class="search-items">Social</li>
+                                <li class="search-items">Foods</li>
+                                <li class="search-items">Restaurants</li>
+                                <li class="search-items">Heritages</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h5 class="text-bold mt-4">Recommended Places</h5>
+                    <div class="recommended-places">
+                        <div class="places-list">
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+                            <div class="place-item">
+                                <div class="image">
+                                    <img src="https://lp-cms-production.imgix.net/2019-06/813869da84003e9ab623499ae2465723-bodhnath-stupa.jpg?q=40&w=2000&auto=format">
+                                </div>
+                                <div class="title">Bouddhanath Stupa</div>
+                                <div class="description text-muted">Lightseeing place in Kathmandu</div>
+                                <div class="price">NRP 250</div>
+                                <div class="favourites"><i class="bi bi-heart"></i></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mapBox"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8631618676677!2d85.35980871495057!3d27.72151093147653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1bda4a951f0f%3A0x3ddabb234891c3bd!2sBoudhanath%20Stupa!5e0!3m2!1sen!2snp!4v1659685982640!5m2!1sen!2snp"
+                        width="800" height="750" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+<footer class="footer-distributed">
+    <div class="footer-inside">
+        <div class="footer-center">
+            <div class="footer-center-wrapper">
+                <div><span>Policy</span>
+                    <ul>
+                        <li>Home</li>
+                        <li>Blog</li>
+                        <li>Pricing</li>
+                        <li>About</li>
+                        <li>Faq</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div><span>Policy</span>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Terms Of use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+                <div><span>Policy</span>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Terms Of use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+                <div><span>Help</span>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Terms Of use</li>
+                        <li>Security</li>
+                        <li>Privacy</li>
+                        <li>Sitemap</li>
+                        <li>Faq</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> Web Dev Trick is a blog for web designers, graphic designers, web developers &amp; SEO Learner. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nam ea commodi expedita? Architecto iure natus,
+                nesciunt dolorem alias sint dolor in cumque ducimus quisquam numquam similique incidunt ipsam repudiandae?
+            </p>
+            <div class="footer-icons">
+                <a href="#" data-toggle="tooltip" title="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="#" data-toggle="tooltip" title="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="#" data-toggle="tooltip" title="Linkedin"><i class="bi bi-linkedin"></i></a>
+                <a href="#" data-toggle="tooltip" title="Github"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="footer-bottom">
+        <div>
+            <button data-toggle="tooltip" title="Location"><i class="bi bi-geo-alt"></i></button>
+            <p><span>Thapathali</span> Kathmandu, Nepal</p>
+        </div>
+        <div>
+            <button data-toggle="tooltip" title="Contact"><i class="bi bi-telephone"></i></button>
+            <p>+977 9125485884</p>
+        </div>
+        <div>
+            <button data-toggle="tooltip" title="E-mail"><i class="bi bi-envelope"></i></button>
+            <p><a href="mailto:support@company.com">contact@webdevtrick.com</a></p>
+        </div>
+        <div>
+            <p class="footer-company-name">Stayara &copy; 2022</p>
+        </div>
+        <div class="payment-method">
+            <img src="paymentMethod.svg" alt="">
+        </div>
+    </div>
+</footer>
+
+</html>
